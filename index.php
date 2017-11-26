@@ -38,7 +38,7 @@
 					{
 						$result=($n*pow($a,2))/(4*tan(deg2rad(180)/$n));
 						$formatedresult = number_format($result, 2, ',', ' ');
-						echo "Площадь равна: $formatedresult";
+						echo 'Площадь равна:'. htmlspecialchars($formatedresult);
 					}
 			}
 			else if ($n != '')
